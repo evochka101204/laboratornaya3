@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Portfolio Card</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f0f0f0;
+            }
+    
+            .container {
+                width: 80%;
+                margin: 0 auto;
+            }
+    
+            .header {
+                background-color: #c7561e;
+                color: rgb(255, 255, 255);
+                padding: 10px 0;
+            }
+    
+            .header-title {
+                margin: 0;
+                padding: 0 0 0 20px;
+            }
+    
+            .main {
+                padding: 20px 0;
+            }
+    
+            .footer {
+                background-color: #c7561e;
+                color: white;
+                text-align: center;
+                padding: 10px 0;
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+            }
+    
+            .avatar {
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+            }
+    
+            .portfolio-menu {
+                display: none;
+                background-color: #e0e0e0;
+                padding: 10px;
+                margin-top: 10px;
+            }
+    
+            .toggle-button {
+                background-color: #130e74;
+                color: white;
+                border: none;
+                padding: 10px 15px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <h1 class="header-title">Portfolio card</h1>
+            </div>
+        </header>
+    
+        <main class="main">
+            <div class="container">
+                <img src="martaava.jpeg" alt="fotocarochka" class="avatar">
+                <h2>хеллоу мир</h2>
+                <p>меня зовут ева, это мой сайт-визитка! </p>
+                
+                <button class="toggle-button" onclick="togglePortfolio()">Portfolio</button>
+                <div class="portfolio-menu" id="portfolioMenu">
+                    <p>посмотрите мои работенки, ну пж</p>
+                    <ul>
+                        <li><a href="https://github.com/evochka101204" target="_blank">GitHub</a></li>
+        
+                    </ul>
+                </div>
+            </div>
+        </main>
+    
+        <footer class="footer">
+            <p> 2023. надеюсь не отчислят.</p>
+        </footer>
+    
+        <script>
+            function togglePortfolio() {
+                var portfolioMenu = document.getElementById("portfolioMenu");
+                if (portfolioMenu.style.display === "none") {
+                    portfolioMenu.style.display = "block";
+                } else {
+                    portfolioMenu.style.display = "none";
+                }
+            }
+        </script>
+    </body>
+    
+</html>
